@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Lets test it</title>
+</head>
+
+<body>
+    <!-- railway forms , NEET/JEE Forms like these forms  -->
+    <h1> Form to appy for Web Development Course</h1>
+
+
+    <form action="post">
+
+        <div>
+            <label for="username">Enter the username</label>
+            <input type="text" name="username" placeholder="Username">
+        </div>
+
+
+
+        <div>
+            <label for="male">male</label>
+            <input type="radio" id="male" name="gender" value="male">
+
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender" value="female">
+        </div>
+
+        <!-- div= line break ke liye ( br tag also do same) but we prefer to use div tag
+
+        input and label mai fill krna hai inside the div inside the form tag ,  -->
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe</label>
+        </div>
+
+
+        <!-- type = text , radio , checkbox.. etc yeh sab types hai means tick mark , dot mark like this -->
+
+
+        <div>
+            <label for="comment">Comment</label>
+            <div>
+                <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+            </div>
+        </div>
+
+        <!-- textarea = just like , we want to add some comment in the box , we use textarea tag , and label lagana padega and label ka (for) and textarea ka (id) same hona chaiye jaise comment hai , then rows col de diya.. -->
+
+        <div>
+            <label for="Fruits">Fruits</label>
+            <select name="Fruits" id="Fruits">
+                <option value="Apple">Apples</option>
+                <option value="Banana">Banana</option>
+                <option value="Cherry">Cherry</option>
+            </select>
+        </div>
+
+        <!-- select tab = it gives choices like fruits section we made and it give by scrolling , the name of fruits... and we use label tag too... and (for) and (id) Should be same  -->
+
+
+
+
+
+
+    </form>
+
+    <!-- action = get/ post , get means simple means kuch inpur diya hai simple sa , post means we want some more details and all means most times we use post  -->
+
+
+</body>
+
+</html>
