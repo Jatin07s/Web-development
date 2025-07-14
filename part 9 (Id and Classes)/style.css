@@ -1,0 +1,22 @@
+.red{
+    background-color: rgb(195, 109, 109);
+}
+
+/* class ko identify krne ke liye (.red) lagana padega means (.) then class , so div tag and span tag ki class same hai (red) so dono mai background colour change huye hai  */
+
+.yellow{
+    background-color: rgb(193, 193, 86);
+}
+
+.bg-yellow{
+    color: blue;
+
+}
+
+/* (.bg-yellow) this is also a class of div tag , so we use color:blue text ko blue kr dega...  */
+
+#firstdiv{
+    /* background-color: rgb(116, 191, 116); */
+}
+
+/* Id ko use krne ke liye (#) ka use like #firstdiv , means we are using div tag with (first text) like this we use some attribute to customize it */
