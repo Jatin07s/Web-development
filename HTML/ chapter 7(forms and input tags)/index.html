@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Form for Python course</h1>
+    <form action="post">       
+        <!-- so basically , forms - railways nd all mai use hote hai , 
+        like name , age , gender , region nd all this things come under form  -->
+
+
+     <div>
+        <label for="username">Username - </label>
+        <input type="text" id="username" name="username"
+        placeholder="Enter your username">
+     </div>
+
+     <div>    
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gender" value="male">
+
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender" value="female">
+
+        <!-- label and input tags
+
+        label = means label ka (for) and input ka (id) same hona chaiye , 
+        tabhi connect honge , label ke beech agar jo likha woh print hoga 
+        
+        input = type - text,radio (text = rectangle box mai likhne ke liye) (radio = circle box mai tick untick ke liye) (id) same as label , placeholder works in (text) box ke andar visible krega  -->
+
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to my channel</label>
+        </div>
+
+        <!-- type = checkbox means tick wala scene nd all -->
+
+
+        <div>
+            <select name="fruits" id="fruits">
+                <option value="apple">apple</option>
+                <option value="banana">banana</option>
+                <option value="cherry">cherry</option>
+            </select>
+            <label for="fruits">select a fruit</label>
+        </div>
+
+        
+
+        <!-- select used to select thing like dropdown -->
+
+
+
+
+        
+
+     </div>
+     
+
+
+    </form>
+</body>
+</html>
