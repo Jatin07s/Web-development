@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /*element selector*/
+        /*div{
+            background-color: red;
+        }*/
+        .red{
+            background-color: red;
+            
+        }
+
+        #yellow{
+            background-color: aquamarine;
+        }
+
+        div > p {
+            background-color: aqua;
+        }
+
+        div > article > p {
+            background-color: blue;
+            color: yellow;
+        }
+
+        div h1 {
+            background-color: black;
+            color: white;
+        }
+
+        /*.red means = class red wala div tag lia hai*/ 
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <ol>
+            <li>Selectors
+                <ul type="circle">
+                    <li><b style="background-color: yellow;">Class selectors</b> = means particulary har ek tag ki class define krdi then us class ka use krke (.red) krke style kia [ class wale ko (.) se represent krenge </li>
+                    <br>
+
+                    <li><b style="background-color: yellow;">ID selector</b> = ID wale ko (#) se represent krenge</li>
+                    
+                    <br>
+
+
+                    <li><b style="background-color: yellow;">Child selectors</b> = like maine div banaaya then p banaya fir isko use krne ke liye div > p {} prop likh di , sabhi div ke andar p honge uspe apply ho jaega no matter whats the class or id </li>
+
+                    <br>
+
+                    <li><b style="background-color: yellow;">descendent selector</b> = same as child selector , bas space se separate krenge , and no matter artcile ya ko ibhi tag ho bas div ke andar p tag hona chaiye , woh implement ho jaega</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div class="red">
+        I am a div tag
+    </div>
+
+    <hr>
+
+    <div id="yellow">
+        Hello how are you 
+    </div>
+    <hr>
+
+    <div>
+        <p>Hello My name is Virat Kohli</p>
+    </div>
+
+
+    <div>
+        <article>
+            <p>Hello bro how are you </p>
+        </article>
+    </div>
+
+
+    <hr>
+
+    <div>
+        <article>
+            <p>
+                <h1>Jatin</h1>
+            </p>
+        </article>
+    </div>
+    <!-- div ke andar article hai then p hai , isiliye prop kaam nahi kia  -->
+    
+    <!-- now , maine 2 div tags likhe hai , and inside the style tag , dono div tag mai woh style property lag gayi hai , so bypaaas that , like ki dono dov tag mai alag bg color lage , I will use selectors -->
+</body>
+</html>
