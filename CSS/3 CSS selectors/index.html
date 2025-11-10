@@ -14,10 +14,12 @@
             
         }
 
+        /* ID selector = means particular id ko target krega */
         #yellow{
             background-color: aquamarine;
         }
 
+    /* Child Selectors = means direct child ko target krega , agar koi aur tag hai eg:- another div and uska bhi p tag hau , usko target nahi karega , only direct child ko target karega */
         div > p {
             background-color: aqua;
         }
@@ -26,13 +28,25 @@
             background-color: blue;
             color: yellow;
         }
-
+        /* Descendent Selector = means koi bhi descendant ho , direct child ho ya fir uske andar koi aur tag ho , bas parent ke andar hona chaiye , usko target krega */
         div h1 {
             background-color: black;
             color: white;
         }
 
         /*.red means = class red wala div tag lia hai*/ 
+
+       /* Universal selector = means sabhi tags ko target krega */
+       *{
+        margin: 0;
+        padding: 0;
+       }
+
+       /* Pseudo class selector = means jab hum kisi element pe hover karenge tab woh change ho jayega */
+         div:hover{
+            background-color: pink;
+         }
+         
 
 
     </style>
