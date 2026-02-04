@@ -1,0 +1,1 @@
+console.log(trypeof(profile[i]))
